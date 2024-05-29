@@ -8,7 +8,7 @@ const subjects = document.querySelector(".quiz-subjects")
 const index = document.querySelector(".index")
 const home = document.querySelector(".home")
 const app = document.querySelector(".app")
-alert("why arent tohfnkc")
+
 
 let subject = 0
 let questionIndex = 0;
@@ -17,15 +17,14 @@ let score = 0;
 Array.from(subjects.children).map(subject => {
         subject.addEventListener('click', (e)=> {
             if(!user_name.value) {
-                // swal.fire({
-                //     icon:"error",
-                //     title:"Unable to enter Quiznosaur",
-                //     text:"Please provide your name",
-                //     showConfirmButton: false,
-                //     timer: 2000,
-                //     timerProgressBar:true
-                //     });
-                    alert("error")
+                swal.fire({
+                    icon:"error",
+                    title:"Unable to enter Quiznosaur",
+                    text:"Please provide your name",
+                    showConfirmButton: false,
+                    timer: 2000,
+                    timerProgressBar:true
+                    });
                 return
             }
         welcome.style.display = "none"
@@ -59,7 +58,8 @@ function startQuiz (id)  {
     showQuestion()
 }
 const showQuestion = () => {
-        let currentQuestion = data[0][questionIndex]
+    if (subject !== undefined) {
+        let currentQuestion = data[subject][questionIndex]
     let questionNo =  questionIndex + 1
     answerButtons.innerHTML = ""
     index.innerHTML = `Question ${questionNo}/${data[subject].length}`
@@ -72,7 +72,7 @@ const showQuestion = () => {
         answerButtons.appendChild(newOption)
         newOption.addEventListener('click', selectAnswer)
     })
-    
+    }
     
 }
 const selectAnswer = (event) => {
@@ -110,10 +110,11 @@ const handleNextButton = () => {
     }
     else {
         answerButtons.innerHTML = ""
-        nextButton.style.display = "block"
         home.style.display = "block"
+        nextButton.style.display = "block"
         questionElement.innerHTML = `${user_name.value}, you scored ${score} out of ${data[subject].length}`
         nextButton.innerHTML = "Play Again"
+
         setTimeout(() => {
             swal.fire({
                 icon:"success",
@@ -123,8 +124,7 @@ const handleNextButton = () => {
                 timer: 3000,
                 timerProgressBar:true
                 });
-        },3000)
+        },1000)
     }
 }
 startQuiz()
-
