@@ -17,14 +17,15 @@ let score = 0;
 Array.from(subjects.children).map(subject => {
         subject.addEventListener('click', (e)=> {
             if(!user_name.value) {
-                swal.fire({
-                    icon:"error",
-                    title:"Unable to enter Quiznosaur",
-                    text:"Please provide your name",
-                    showConfirmButton: false,
-                    timer: 2000,
-                    timerProgressBar:true
-                    });
+                // swal.fire({
+                //     icon:"error",
+                //     title:"Unable to enter Quiznosaur",
+                //     text:"Please provide your name",
+                //     showConfirmButton: false,
+                //     timer: 2000,
+                //     timerProgressBar:true
+                //     });
+                    alert("error")
                 return
             }
         welcome.style.display = "none"
