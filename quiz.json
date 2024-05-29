@@ -94,6 +94,54 @@
                 {"option": "Media studies", "correct":false}
             ]
         } 
+    ],
+    [
+        {
+            "question": "The fear of insects is known as what?",
+            "options": [
+                {"option": "Entomophobia", "correct":true},
+                {"option": "Arachnophobia", "correct":false},
+                {"option": "Ailurophobia", "correct":false},
+                {"option": "Hydrophobia", "correct":false}
+            ]
+        },
+        {
+            "question": "Which of the following languages have the longest alphabets?",
+            "options": [
+                {"option": "Greek", "correct":false},
+                {"option": "Arabic", "correct":false},
+                {"option": "Russian", "correct":true},
+                {"option": "English", "correct":false}
+            ]
+            
+        },
+        {
+            "question": "What horoscope sign is a fish?",
+            "options": [
+                {"option": "Leo", "correct":false},
+                {"option": "Libra", "correct":false},
+                {"option": "Pisces", "correct":true},
+                {"option": "Aquarius", "correct":false}
+            ]
+        },
+        {
+            "question": "What is the largest US state by landmass?",
+            "options": [
+                {"option": "Maine", "correct":false},
+                {"option": "Texas", "correct":false},
+                {"option": "Houston", "correct":false},
+                {"option": "Alaska", "correct":true}
+            ]
+        },
+        {
+            "question": "Which of the following apps has the most total users?",
+            "options": [
+                {"option": "Instagram ", "correct":true},
+                {"option": "Signal", "correct":false},
+                {"option": "TikTok", "correct":false},
+                {"option": "Snapchat", "correct":false}
+            ]
+        } 
     ]
 ]
 
