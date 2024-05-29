@@ -100,7 +100,7 @@ nextButton.addEventListener('click', ()=> {
      handleNextButton()
     }
     else {
-        startQuiz()
+        startQuiz(subject)
     }
  })
 const handleNextButton = () => {
