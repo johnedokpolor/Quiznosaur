@@ -19,7 +19,7 @@ body {
     width: 80%;
     border-radius: 10px;
     text-align:center ;
-    margin-top:150px;
+    margin-top: 150px;
     padding: 30px;
 }
 
@@ -115,7 +115,7 @@ hr {
     border-radius: 10px;
 }
 .quiz {
-/*     display: none; */
+    display: none;
 }
 input {
     padding: 15px;
@@ -146,7 +146,7 @@ input:focus {
         width: 95%;
         border-radius: 0px;
         height: 100%;
-        margin-top:0
+        margin-top: 0;
     }
 }
 /* @font-face {
