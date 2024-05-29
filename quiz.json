@@ -1,0 +1,99 @@
+[
+    [
+        {
+            "question": "Who is known for his experiments with dogs and the discovery of classical conditioning?",
+            "options": [
+                {"option": "BF Skinner", "correct":false},
+                {"option": "Ivan Pavlov", "correct":true},
+                {"option": "John B. Watson", "correct":false},
+                {"option": "Edward Thorndike", "correct":false}
+            ]
+        },
+        {
+            "question": "Which behaviorist expanded on the principles of behaviourism and introduced operant conditioning?",
+            "options": [
+                {"option": "Dr Nuhu", "correct":false},
+                {"option": "Kurt Koffka", "correct":false},
+                {"option": "Max Wertheimer", "correct":false},
+                {"option": "BF Skinner", "correct":true}
+            ]
+            
+        },
+        {
+            "question": "Who is often considered the father of behaviorism and published the 'Behaviorist Manifesto'?",
+            "options": [
+                {"option": "John B. Watson", "correct":true},
+                {"option": "BF Skinner", "correct":false},
+                {"option": "Edward Thorndike", "correct":false},
+                {"option": "Ivan Pavlov", "correct":false}
+            ]
+        },
+        {
+            "question": "Who formulated the law of Effect, saying that behaviours followed by satisfying consequences are more likely to be repeated?",
+            "options": [
+                {"option": "BF Skinner", "correct":false},
+                {"option": "Ivan Pavlov", "correct":false},
+                {"option": "John B. Watson", "correct":false},
+                {"option": "Edward Thorndike", "correct":true}
+            ]
+        },
+        {
+            "question": "Who developed a comprehensive theory of behaviour known as 'Hullian Behaviourism'?",
+            "options": [
+                {"option": "Kurt Koffka", "correct":false},
+                {"option": "Clark L. Hull", "correct":true},
+                {"option": "Dr Nuhu", "correct":false},
+                {"option": "Max Wertheimer", "correct":false}
+            ]
+        } 
+    ],
+    [
+        {
+            "question": "How is technology described when viewed as a product in the field of education?",
+            "options": [
+                {"option": "Software for conveying information", "correct":false},
+                {"option": "The physical machine/equipment for conveying and supplying information", "correct":true},
+                {"option": "The message carrier", "correct":false},
+                {"option": "It involves using physical objects only for teaching and learning", "correct":false}
+            ]
+        },
+        {
+            "question": "What is education described as in the context of the text?",
+            "options": [
+                {"option": "A medium for entertainment", "correct":false},
+                {"option": "A process and medium for acquring relevant knowledge", "correct":true},
+                {"option": "A system for enforcing rules and regulations", "correct":false},
+                {"option": "A tool for physical fitness training", "correct":false}
+            ]
+            
+        },
+        {
+            "question": "According to 'Hackbarth(1996)', how can educational technology be reviewed?",
+            "options": [
+                {"option": "Only as a profession", "correct":false},
+                {"option": "Only as a product", "correct":false},
+                {"option": "From the perspectives of process, products, profession, and academic speciality", "correct":true},
+                {"option": "From the perspectives of process and products only", "correct":false}
+            ]
+        },
+        {
+            "question": "What is instructional technology focused on?",
+            "options": [
+                {"option": "Installing equiptment", "correct":false},
+                {"option": "Advicing teachers on device usage", "correct":false},
+                {"option": "Systematically crafting lessons and curricula", "correct":true},
+                {"option": "All of the above", "correct":false}
+            ]
+        },
+        {
+            "question": "The study and ethical practice of facilitating learning and improving performance by creating and managing appropriate technological processes and resources is known as?",
+            "options": [
+                {"option": "Educational technology ", "correct":true},
+                {"option": "Instructional technology ", "correct":false},
+                {"option": "Educational psychologytechnology ", "correct":false},
+                {"option": "Media studies", "correct":false}
+            ]
+        } 
+    ]
+]
+

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz Project</title>
+    <link rel="stylesheet" href="quiz.css">
+</head>
+<body>
+
+    <div class="app">
+        <div class="welcome">
+            <h1>Quiznosaur</h1>
+            <p>Test yourself with our specially tailored trivia questions just for you.</p>
+
+            <input type="text" name="name" id="user_name" placeholder="Enter your name">
+            <ul class="quiz-subjects">
+                <h2>Select a Course</h2>
+                <button class="btn subject" id="0">EDT 118</button>
+                <button class="btn subject" id="1">EDU 214</button>
+                <button class="btn subject" id="2">RANDOM</button>
+            </ul>
+        </div>
+        <div class="quiz">
+
+            <h4 class="index">Quiz</h4>
+            <hr>
+            <h2 class="question">Question goes here</h2>
+            <ul class="answer-buttons">
+                <!-- Options go here -->
+            </ul>
+            <div class="nav-buttons">
+                <div class="next n-btn ">Next</div>
+                <div class="home n-btn">Home</div>
+            </div>
+            
+        </div>
+        
+        </div>
+    <script src="./quiz.js" type="module"></script>
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
+</body>
+</html>
