@@ -59,8 +59,7 @@ function startQuiz (id)  {
     showQuestion()
 }
 const showQuestion = () => {
-    if (subject !== undefined) {
-        let currentQuestion = data[subject][questionIndex]
+        let currentQuestion = data[0][questionIndex]
     let questionNo =  questionIndex + 1
     answerButtons.innerHTML = ""
     index.innerHTML = `Question ${questionNo}/${data[subject].length}`
@@ -73,7 +72,7 @@ const showQuestion = () => {
         answerButtons.appendChild(newOption)
         newOption.addEventListener('click', selectAnswer)
     })
-    }
+    
     
 }
 const selectAnswer = (event) => {
