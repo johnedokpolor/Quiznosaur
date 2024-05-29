@@ -1,4 +1,3 @@
-import data from "./quiz.json" with {type:"json"}
 const questionElement = document.querySelector(".question")
 const quiz = document.querySelector(".quiz")
 const welcome = document.querySelector(".welcome")
@@ -8,18 +7,27 @@ const subjects = document.querySelector(".quiz-subjects")
 const index = document.querySelector(".index")
 const home = document.querySelector(".home")
 const app = document.querySelector(".app")
-
-
+   
+let data = ""
 let subject = 0
 let questionIndex = 0;
 let score = 0;
+
+(function () {
+    fetch('./quiz.json')
+    .then(res => res.json())
+    .then(output => {
+        data = output
+
+    })
+})()
 
 Array.from(subjects.children).map(subject => {
         subject.addEventListener('click', (e)=> {
             if(!user_name.value) {
                 swal.fire({
                     icon:"error",
-                    title:"Unable to enter Quiznosaur🦖",
+                    title:"Unable to enter Quiznosaur",
                     text:"Please provide your name",
                     showConfirmButton: false,
                     timer: 2000,
@@ -32,8 +40,8 @@ Array.from(subjects.children).map(subject => {
         app.style.background = "white"
         swal.fire({
             icon:"success",
-            title:`Welcome to Quiznosaur ${user_name.value} 🦕`,
-            text:"I know you are going to ace this",
+            title:`Welcome to Quiznosaur ${user_name.value} 🦖`,
+            text:"I know you are going to ace this ",
             showConfirmButton: false,
             timer: 3000,
             timerProgressBar:true
@@ -128,4 +136,3 @@ const handleNextButton = () => {
         },1000)
     }
 }
-startQuiz()
