@@ -8,7 +8,7 @@ const subjects = document.querySelector(".quiz-subjects")
 const index = document.querySelector(".index")
 const home = document.querySelector(".home")
 const app = document.querySelector(".app")
-
+alert("why arent tohfnkc")
 
 let subject = 0
 let questionIndex = 0;
