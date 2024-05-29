@@ -126,6 +126,17 @@ input {
 input:focus {
     outline: 0;
 }
+.developer {
+    background-color: white;
+    width:180px;
+    padding: 10px;
+    border-radius: 10px;
+    margin: auto;
+    color:black;
+    display: block;
+    text-decoration: none;
+    margin-top: 30px;
+}
 @media (max-width:600px) {
     body {
         align-items: start;
