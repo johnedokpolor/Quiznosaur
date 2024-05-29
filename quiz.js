@@ -19,7 +19,7 @@ Array.from(subjects.children).map(subject => {
             if(!user_name.value) {
                 swal.fire({
                     icon:"error",
-                    title:"Unable to enter Quiznosaur",
+                    title:"Unable to enter Quiznosaur🦖",
                     text:"Please provide your name",
                     showConfirmButton: false,
                     timer: 2000,
@@ -32,7 +32,7 @@ Array.from(subjects.children).map(subject => {
         app.style.background = "white"
         swal.fire({
             icon:"success",
-            title:`Welcome to Quiznosaur ${user_name.value}`,
+            title:`Welcome to Quiznosaur ${user_name.value} 🦕`,
             text:"I know you are going to ace this",
             showConfirmButton: false,
             timer: 3000,
@@ -54,6 +54,7 @@ function startQuiz (id)  {
     subject = id
     questionIndex = 0;
     score = 0;
+    home.style.display = "none"
     nextButton.innerHTML = "Next"
     showQuestion()
 }
@@ -118,7 +119,7 @@ const handleNextButton = () => {
         setTimeout(() => {
             swal.fire({
                 icon:"success",
-                title:`Thank you for using Quiznosaur ${user_name.value}`,
+                title:`Thank you for using Quiznosaur ${user_name.value} 🦖`,
                 text:"We hope you had a blast",
                 showConfirmButton: false,
                 timer: 3000,
