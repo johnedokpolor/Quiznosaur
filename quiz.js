@@ -41,7 +41,7 @@ Array.from(subjects.children).map(subject => {
         quiz.style.display = "block"
         index.style.color = "white" 
         app.style.paddingTop = "10px"
-        app.style.paddingBottom = "70px"
+        app.style.paddingBottom = "100px"
         swal({
             title: `Welcome to Quiznosaur ${user_name.value} 🦖`,
             text: "We know you're gonna ace this🎉 ",
