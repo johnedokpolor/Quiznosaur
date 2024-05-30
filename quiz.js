@@ -22,31 +22,32 @@ let score = 0;
     })
 })()
 
+
+
 Array.from(subjects.children).map(subject => {
         subject.addEventListener('click', (e)=> {
             if(!user_name.value) {
-                // swal.fire({
-                //     icon:"error",
-                //     title:"Unable to enter Quiznosaur",
-                //     text:"Please provide your name",
-                //     showConfirmButton: false,
-                //     timer: 2000,
-                //     timerProgressBar:true
-                //     });
-               alert("try again")
+      swal({
+        title: "Unable to enter Quiznosaur🦖",
+        text: "Please enter your name 🥺",
+        icon: "error",
+        timer: 2000,
+        button: false
+      });
+      
                 return
             }
         welcome.style.display = "none"
         quiz.style.display = "block"
-        app.style.background = "white"
-        swal.fire({
-            icon:"success",
-            title:`Welcome to Quiznosaur ${user_name.value} 🦖`,
-            text:"I know you are going to ace this ",
-            showConfirmButton: false,
-            timer: 3000,
-            timerProgressBar:true
-            });
+        index.style.color = "white" 
+        app.style.paddingTop = "10px"
+        swal({
+            title: "Welcome to Quiznosaur🦖",
+            text: "We know you're gonna ace this🎉 ",
+            icon: "success",
+            timer: 2000,
+            button: false
+          });
         startQuiz(e.target.id)
     })
     }
@@ -57,23 +58,33 @@ home.addEventListener('click' ,()=> {
         app.style.background = "linear-gradient(90deg, purple,  black)"
 
 })
-
-
+function shuffle(array) {
+    let cIndex = array.length
+    while (cIndex > 0) {
+        let rIndex = Math.floor(Math.random() * cIndex)
+        cIndex --;
+        [array[cIndex], array[rIndex]] = [array[rIndex], array[cIndex]] 
+    }
+}
 function startQuiz (id)  {
     subject = id
     questionIndex = 0;
     score = 0;
     home.style.display = "none"
     nextButton.innerHTML = "Next"
+    shuffle(data[subject])
+    console.log(data[subject])
     showQuestion()
 }
+
 const showQuestion = () => {
     if (subject !== undefined) {
-        let currentQuestion = data[subject][questionIndex]
     let questionNo =  questionIndex + 1
+    let currentQuestion = data[subject][questionIndex]
     answerButtons.innerHTML = ""
     index.innerHTML = `Question ${questionNo}/${data[subject].length}`
     questionElement.innerHTML = currentQuestion.question
+    shuffle(currentQuestion.options)
     currentQuestion.options.map(option => {
         var newOption = document.createElement("button")
         newOption.innerHTML = `${option.option} `
@@ -126,14 +137,16 @@ const handleNextButton = () => {
         nextButton.innerHTML = "Play Again"
 
         setTimeout(() => {
-            swal.fire({
-                icon:"success",
-                title:`Thank you for using Quiznosaur ${user_name.value} 🦖`,
-                text:"We hope you had a blast",
-                showConfirmButton: false,
-                timer: 3000,
-                timerProgressBar:true
-                });
+            swal({
+                title: "Thank you for using Quiznosaur🦖",
+                text: "We hope you had a blast 🤩 ",
+                icon: "success",
+                timer: 2000,
+                button: false
+              });
+          
         },1000)
     }
 }
+
+

@@ -141,7 +141,145 @@
                 {"option": "TikTok", "correct":false},
                 {"option": "Snapchat", "correct":false}
             ]
-        } 
+        }, 
+        {
+            "question": "What city hosted the 2002 olympic games?",
+            "options": [
+                {"option": "Tokyo", "correct":false},
+                {"option": "Sydney", "correct":true},
+                {"option": "Beijing", "correct":false},
+                {"option": "California", "correct":false}
+            ]
+        }, 
+        {
+            "question": "How many plays do people generally believe that Shakespere wrote?",
+            "options": [
+                {"option": "27", "correct":false},
+                {"option": "37", "correct":true},
+                {"option": "38", "correct":false},
+                {"option": "22", "correct":false}
+            ]
+        }, 
+        {
+            "question": "Which of the following was considered one of the seven ancient wonders?",
+            "options": [
+                {"option": "Colosseum", "correct":false},
+                {"option": "Colossus of Rhodes", "correct":true},
+                {"option": "Great Wall of China", "correct":false},
+                {"option": "Rise of the Tsunami", "correct":false}
+            ]
+        }, 
+        {
+            "question": "Who directed the Academy Award-winning movie, Gladiator?",
+            "options": [
+                {"option": "Steven Soderbergh", "correct":false},
+                {"option": "Ridley Scott", "correct":true},
+                {"option": "James Cameron", "correct":false},
+                {"option": "Dwanyne Johnson", "correct":false}
+            ]
+        }, 
+        {
+            "question": "How long did dinosaurs live on the earth?",
+            "options": [
+                {"option": "100-150 million years", "correct":false},
+                {"option": "150-200 million years", "correct":true},
+                {"option": "200+ million years", "correct":false},
+                {"option": "300+ million years", "correct":false}
+            ]
+        }
+    ],
+    [
+        {
+            "question": "The concept of gravity was discovered by which famous physicist??",
+            "options": [
+                {"option": "Sir Isaac Newton", "correct":true},
+                {"option": "Nikola Tesla", "correct":false},
+                {"option": "Galileo Galile", "correct":false},
+                {"option": "Albert Einstein", "correct":false}
+            ]
+        },
+        {
+            "question": "How many colors are in the rainbow??",
+            "options": [
+                {"option": "8", "correct":false},
+                {"option": "3", "correct":false},
+                {"option": "7", "correct":true},
+                {"option": "9", "correct":false}
+            ]
+            
+        },
+        {
+            "question": "What is the name of the tallest grass on earth?",
+            "options": [
+                {"option": "Corn", "correct":false},
+                {"option": "Wheat", "correct":false},
+                {"option": "Bamboo", "correct":true},
+                {"option": "Sugarcane", "correct":false}
+            ]
+        },
+        {
+            "question": "Which is the most abundant element in the universe?",
+            "options": [
+                {"option": "Nitrogen", "correct":false},
+                {"option": "Carbon", "correct":false},
+                {"option": "Oxygen", "correct":false},
+                {"option": "Hydrogen", "correct":true}
+            ]
+        },
+        {
+            "question": "What is the hardest natural substance on Earth?",
+            "options": [
+                {"option": "Diamond", "correct":true},
+                {"option": "Gold", "correct":false},
+                {"option": "Quartz", "correct":false},
+                {"option": "Iron", "correct":false}
+            ]
+        }, 
+        {
+            "question": "Which freezes faster, hot water or cold water?",
+            "options": [
+                {"option": "Cold Water", "correct":false},
+                {"option": "Hot Water", "correct":true},
+                {"option": "They freeze at the same time", "correct":false},
+                {"option": "It depends on the container", "correct":false}
+            ]
+        }, 
+        {
+            "question": "On what continent will you not find bees?",
+            "options": [
+                {"option": "Africa", "correct":false},
+                {"option": "Antarctica", "correct":true},
+                {"option": "Australia", "correct":false},
+                {"option": "Asia", "correct":false}
+            ]
+        }, 
+        {
+            "question": "What is the only rock that floats?",
+            "options": [
+                {"option": "Granite", "correct":false},
+                {"option": "Pumice", "correct":true},
+                {"option": "Basalt", "correct":false},
+                {"option": "Limestone", "correct":false}
+            ]
+        }, 
+        {
+            "question": "How long is the memory of a goldfish?",
+            "options": [
+                {"option": "5 days", "correct":false},
+                {"option": "3 days", "correct":true},
+                {"option": "3 seconds", "correct":false},
+                {"option": "2 weeks", "correct":false}
+            ]
+        }, 
+        {
+            "question": "What mountain peak is farthest from the center of the Earth?",
+            "options": [
+                {"option": "Kilimanjaro", "correct":false},
+                {"option": "Chimborazo", "correct":true},
+                {"option": "Mount Everest", "correct":false},
+                {"option": "K2", "correct":false}
+            ]
+        }
     ]
 ]
 

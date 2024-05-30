@@ -1,6 +1,6 @@
 @font-face {
     font-family: Hanken;
-    src: url(./HankenGrotesk-VariableFont_wght.ttf);
+    src: url(./fonts/HankenGrotesk-VariableFont_wght.ttf);
 }
 * {
     font-family: Hanken;
@@ -11,15 +11,11 @@ body {
     background-color:white;
     display: flex;
     justify-content: center;
-    align-items: center;
-    height: 100vh;
 }
 .app {
     background: linear-gradient(90deg, purple,  black);
-    width: 80%;
-    border-radius: 10px;
+    width: 100%;
     text-align:center ;
-    margin-top: 150px;
     padding: 30px;
 }
 
@@ -29,8 +25,10 @@ body {
     padding: 15px;
     background-color: transparent;
     width:100%;
+    background-color:white;
+    font-weight: 500;
     border-radius: 10px;
-    text-align: start;
+    text-align: center;
     margin:10px auto;
     cursor: pointer;
     transition: 0.3s 0.2s ease;
@@ -85,7 +83,7 @@ hr {
 .n-btn {
     width: 90px;
     padding: 10px 30px;
-    background: linear-gradient(90deg, purple,  black);
+    background: black;
     color: white;
     text-align: center;
     margin: auto;
@@ -99,15 +97,16 @@ hr {
 }
 
 .correct {
-    background-color: rgba(0, 128, 0, 0.562);
-    border:2px solid rgba(0, 128, 0, 0.884);
+    background-color: green;
+    border:2px solid rgb(2, 80, 2);
+    color:white !important
 }
 .incorrect {
-    background-color: rgba(255, 0, 0, 0.377);
-    border:2px solid rgba(255, 0, 0, 0.377);
+    background-color: red;
+    border:2px solid rgb(109, 5, 5);
+    color:white !important
 }
 .question {
-    background:linear-gradient(90deg, purple,  black);
     color: white;
     margin-bottom: 10px;
     padding: 20px;
@@ -139,14 +138,11 @@ input:focus {
     margin-top: 30px;
 }
 @media (max-width:600px) {
-    body {
-        align-items: start;
-    }
     .app {
         width: 95%;
         border-radius: 0px;
         height: 100%;
-        margin-top: 0;
+
     }
 }
 /* @font-face {
