@@ -27,14 +27,13 @@ let score = 0;
 Array.from(subjects.children).map(subject => {
         subject.addEventListener('click', (e)=> {
             if(!user_name.value) {
-               alert("Unable to enter Quiznosaur🦖, Please enter your name 🥺")
-      // swal({
-      //   title: "Unable to enter Quiznosaur🦖",
-      //   text: "Please enter your name 🥺",
-      //   icon: "error",
-      //   timer: 2000,
-      //   button: false
-      // });
+      swal({
+        title: "Unable to enter Quiznosaur🦖",
+        text: "Please enter your name 🥺",
+        icon: "error",
+        timer: 2000,
+        button: false
+      });
       
                 return
             }
