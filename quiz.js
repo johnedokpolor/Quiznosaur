@@ -42,7 +42,7 @@ Array.from(subjects.children).map(subject => {
         index.style.color = "white" 
         app.style.paddingTop = "10px"
         swal({
-            title: "Welcome to Quiznosaur🦖",
+            title: `Welcome to Quiznosaur ${user_name.value} 🦖`,
             text: "We know you're gonna ace this🎉 ",
             icon: "success",
             timer: 2000,
@@ -139,7 +139,7 @@ const handleNextButton = () => {
 
         setTimeout(() => {
             swal({
-                title: "Thank you for using Quiznosaur🦖",
+                title: `Thank you for using Quiznosaur ${user_name.value} 🦖`,
                 text: "We hope you had a blast 🤩 ",
                 icon: "success",
                 timer: 2000,
