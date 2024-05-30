@@ -15,7 +15,7 @@ body {
 }
 .app {
     background: linear-gradient(90deg, purple,  black);
-    width: 100%;
+    width: 90%;
     text-align:center ;
     padding: 30px;
 }
