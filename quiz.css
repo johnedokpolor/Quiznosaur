@@ -140,7 +140,7 @@ input:focus {
 }
 @media (max-width:600px) {
     .app {
-        width: 95%;
+        width: 50%;
         border-radius: 0px;
         height: 100%;
 
