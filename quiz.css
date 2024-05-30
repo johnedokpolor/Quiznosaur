@@ -11,7 +11,7 @@ body {
     background-color:white;
     display: flex;
     justify-content: center;
-    overflow-x: hidden
+    overflow-x: hidden;
 }
 .app {
     background: linear-gradient(90deg, purple,  black);
@@ -140,7 +140,7 @@ input:focus {
 }
 @media (max-width:600px) {
     .app {
-        width: 50%;
+        width: 90%;
         border-radius: 0px;
         height: 100%;
 
