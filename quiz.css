@@ -30,7 +30,7 @@ body {
     font-weight: 500;
     border-radius: 10px;
     text-align: center;
-    margin:13px auto;
+    margin:15px auto;
     cursor: pointer;
     transition: 0.3s 0.2s ease;
 }
