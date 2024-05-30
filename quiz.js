@@ -89,6 +89,7 @@ const showQuestion = () => {
         var newOption = document.createElement("button")
         newOption.innerHTML = `${option.option} `
         newOption.classList.add("btn")
+        newOption.classList.add("animate__animated", "animate__zoomInDown")
         newOption.dataset.correct = option.correct
         answerButtons.appendChild(newOption)
         newOption.addEventListener('click', selectAnswer)
