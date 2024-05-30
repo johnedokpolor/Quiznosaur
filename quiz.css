@@ -10,8 +10,8 @@
 body {
     background-color:white;
     display: flex;
-/*     justify-content: center;
-    overflow-x: hidden; */
+    justify-content: center;
+    overflow-x: hidden;
 }
 .app {
     background: linear-gradient(90deg, purple,  black);
