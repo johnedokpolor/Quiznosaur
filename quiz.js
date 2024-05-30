@@ -27,13 +27,14 @@ let score = 0;
 Array.from(subjects.children).map(subject => {
         subject.addEventListener('click', (e)=> {
             if(!user_name.value) {
-      swal({
-        title: "Unable to enter Quiznosaur🦖",
-        text: "Please enter your name 🥺",
-        icon: "error",
-        timer: 2000,
-        button: false
-      });
+               alert("Unable to enter Quiznosaur🦖, Please enter your name 🥺")
+      // swal({
+      //   title: "Unable to enter Quiznosaur🦖",
+      //   text: "Please enter your name 🥺",
+      //   icon: "error",
+      //   timer: 2000,
+      //   button: false
+      // });
       
                 return
             }
@@ -41,6 +42,7 @@ Array.from(subjects.children).map(subject => {
         quiz.style.display = "block"
         index.style.color = "white" 
         app.style.paddingTop = "10px"
+        app.style.paddingBottom = "50px"
         swal({
             title: `Welcome to Quiznosaur ${user_name.value} 🦖`,
             text: "We know you're gonna ace this🎉 ",
@@ -132,6 +134,9 @@ const handleNextButton = () => {
     }
     else {
         answerButtons.innerHTML = ""
+        home.style.color = "black"
+        home.style.backgroundColor = "white"
+        home.style.width = "50px"
         home.style.display = "block"
         nextButton.style.display = "block"
         questionElement.innerHTML = `${user_name.value}, you scored ${score} out of ${data[subject].length}`
