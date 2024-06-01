@@ -14,8 +14,6 @@ body {
 }
 .app {
     text-align:center;
-    display: flex;
-    justify-content: center;
     padding: 30px;
 }
 .flex {
@@ -48,7 +46,10 @@ hr {
 
 .welcome {
     color: white;
-    width:90%
+    display: flex;
+    display: none;
+    
+    justify-content: center;
 }
 .welcome h1 {
     margin-bottom: 20px;
@@ -114,7 +115,6 @@ hr {
     border-radius: 10px;
 }
 .quiz {
-    display: none;
 }
 input {
     padding: 15px;
