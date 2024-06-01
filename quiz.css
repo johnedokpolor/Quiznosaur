@@ -47,8 +47,6 @@ hr {
 .welcome {
     color: white;
     display: flex;
-    display: none;
-    
     justify-content: center;
 }
 .welcome h1 {
@@ -56,6 +54,7 @@ hr {
 }
 .welcome p {
     margin-bottom: 20px;
+    color:white
 }
 .quiz-subjects {
     background-color: white;
@@ -115,6 +114,7 @@ hr {
     border-radius: 10px;
 }
 .quiz {
+    display:none
 }
 input {
     padding: 15px;
