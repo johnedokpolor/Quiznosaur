@@ -3,30 +3,26 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="author" content="Edokpolor John">
-    <meta name="description" content="Test your knowledge with Quiznosaur">
-    <meta property="og:image" content="https://greenlandtelecoms.com.ng/images/creative-illustration.jpg">
-    <link rel="icon" type="image/png" sizes="32x32" href="https://greenlandtelecoms.com.ng/images/creative-illustration.jpg">
-    <title>Quiznosaur | Challenge your brain</title>
+    <title>Quiznosaur</title>
     <link rel="stylesheet" href="quiz.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
 </head>
 <body>
-
     <div class="app">
         <div class="welcome">
-            <h1 class="animate__animated animate__rubberBand"> Quiznosaur</h1>
+            <h1 class="animate__animated animate__rubberBand animate__infinite"> Quiznosaur</h1>
             <p>Test yourself with our specially tailored trivia questions just for you.</p>
+            <p class="music animate__animated animate__heartBeat animate__infinite" onclick="intro()"> Want some music?🎼🎹</p>
 
             <input type="text" name="name" id="user_name" placeholder="Enter your name">
             <ul class="quiz-subjects">
                 <h2>Select a Course</h2>
-                <button class="btn subject animate__animated animate__lightSpeedInLeft" id="0">EDT 118</button>
-                <button class="btn subject animate__animated animate__lightSpeedInRight" id="1">EDU 214</button>
-                <button class="btn subject animate__animated animate__lightSpeedInLeft" id="2">RANDOM</button>
-                <button class="btn subject animate__animated animate__lightSpeedInRight" id="3">SCIENCE</button>
-                <button class="btn subject animate__animated animate__lightSpeedInLeft" id="4">RELIGION</button>
-                <button class="btn subject animate__animated animate__lightSpeedInRight" id="5">TECHNOLOGY</button>
+                <button class="btn subject  animate__animated animate__lightSpeedInLeft " id="0">EDT 118</button>
+                <button class="btn subject  animate__animated animate__lightSpeedInRight " id="1">EDU 214</button>
+                <button class="btn subject  animate__animated animate__lightSpeedInLeft " id="2">RANDOM</button>
+                <button class="btn subject  animate__animated animate__lightSpeedInRight " id="3">SCIENCE</button>
+                <button class="btn subject  animate__animated animate__lightSpeedInLeft " id="4">RELIGION</button>
+                <button class="btn subject  animate__animated animate__lightSpeedInRight " id="5">TECHNOLOGY</button>
             </ul>
         </div>
         <div class="quiz">
@@ -45,8 +41,7 @@
         <a href="https://api.whatsapp.com/send?phone=2348173749198" class="developer">Made with ❤️ by GLtech</a>
         
         </div>
-    <script src="./quiz.js" type="module"></script>
+    <script src="./quiz.js"></script>
     <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
-
 </body>
 </html>

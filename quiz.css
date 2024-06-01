@@ -8,26 +8,24 @@
     margin: 0;
 }
 body {
-    background-color:white;
+    background: linear-gradient(90deg, purple,  black);
     display: flex;
     justify-content: center;
-    overflow-x: hidden;
 }
 .app {
-    background: linear-gradient(90deg, purple,  black);
-    width: 100%;
-    text-align:center ;
+    text-align:center;
     padding: 30px;
 }
-
-
+.flex {
+    align-items: center;
+    height: 100vh;
+}
 .btn {
     border:1px solid rgba(0, 0, 0, 0.568);
     padding: 15px;
-    background-color: transparent;
     width:100%;
     background-color:white;
-    font-weight: 500;
+    font-weight: bold;
     border-radius: 10px;
     text-align: center;
     margin:15px auto;
@@ -95,6 +93,7 @@ hr {
 }
 .nav-buttons {
     display: flex;
+    gap:20px;
 }
 
 .correct {
@@ -122,6 +121,7 @@ input {
     width: 80%;
     border-radius: 10px;
     margin: 40px 0;
+    cursor: pointer;
     border: 1px solid rgba(0, 0, 0, 0.301);
 }
 input:focus {
@@ -138,14 +138,7 @@ input:focus {
     text-decoration: none;
     margin-top: 30px;
 }
-@media (max-width:600px) {
-    .app {
-        width: 90%;
-        border-radius: 0px;
-        height: 100%;
 
-    }
-}
 /* @font-face {
     font-family: Hanken;
     src: url(./fonts/HankenGrotesk-VariableFont_wght.ttf);

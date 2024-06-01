@@ -7,7 +7,8 @@
                 {"option": "Ivan Pavlov", "correct":true},
                 {"option": "John B. Watson", "correct":false},
                 {"option": "Edward Thorndike", "correct":false}
-            ]
+            ],
+            "sound": "./sounds/0sound1.mp3"
         },
         {
             "question": "Which behaviorist expanded on the principles of behaviourism and introduced operant conditioning?",
@@ -16,7 +17,8 @@
                 {"option": "Kurt Koffka", "correct":false},
                 {"option": "Max Wertheimer", "correct":false},
                 {"option": "BF Skinner", "correct":true}
-            ]
+            ],
+            "sound": "./sounds/0sound2.mp3"
             
         },
         {
@@ -26,7 +28,8 @@
                 {"option": "BF Skinner", "correct":false},
                 {"option": "Edward Thorndike", "correct":false},
                 {"option": "Ivan Pavlov", "correct":false}
-            ]
+            ],
+            "sound": "./sounds/0sound3.mp3"
         },
         {
             "question": "Who formulated the law of Effect, saying that behaviours followed by satisfying consequences are more likely to be repeated?",
@@ -35,7 +38,8 @@
                 {"option": "Ivan Pavlov", "correct":false},
                 {"option": "John B. Watson", "correct":false},
                 {"option": "Edward Thorndike", "correct":true}
-            ]
+            ],
+            "sound": "./sounds/0sound4.mp3"
         },
         {
             "question": "Who developed a comprehensive theory of behaviour known as 'Hullian Behaviourism'?",
@@ -44,7 +48,8 @@
                 {"option": "Clark L. Hull", "correct":true},
                 {"option": "Dr Nuhu", "correct":false},
                 {"option": "Max Wertheimer", "correct":false}
-            ]
+            ],
+            "sound": "./sounds/0sound5.mp3"
         } 
     ],
     [
@@ -55,7 +60,8 @@
                 {"option": "The physical machine/equipment for conveying and supplying information", "correct":true},
                 {"option": "The message carrier", "correct":false},
                 {"option": "It involves using physical objects only for teaching and learning", "correct":false}
-            ]
+            ],
+            "sound": "./sounds/1sound1.mp3"
         },
         {
             "question": "What is education described as in the context of the text?",
@@ -64,7 +70,8 @@
                 {"option": "A process and medium for acquring relevant knowledge", "correct":true},
                 {"option": "A system for enforcing rules and regulations", "correct":false},
                 {"option": "A tool for physical fitness training", "correct":false}
-            ]
+            ],
+            "sound": "./sounds/1sound2.mp3"
             
         },
         {
@@ -74,7 +81,8 @@
                 {"option": "Only as a product", "correct":false},
                 {"option": "From the perspectives of process, products, profession, and academic speciality", "correct":true},
                 {"option": "From the perspectives of process and products only", "correct":false}
-            ]
+            ],
+            "sound": "./sounds/1sound3.mp3"
         },
         {
             "question": "What is instructional technology focused on?",
@@ -83,16 +91,18 @@
                 {"option": "Advicing teachers on device usage", "correct":false},
                 {"option": "Systematically crafting lessons and curricula", "correct":true},
                 {"option": "All of the above", "correct":false}
-            ]
+            ],
+            "sound": "./sounds/1sound4.mp3"
         },
         {
             "question": "The study and ethical practice of facilitating learning and improving performance by creating and managing appropriate technological processes and resources is known as?",
             "options": [
                 {"option": "Educational technology ", "correct":true},
                 {"option": "Instructional technology ", "correct":false},
-                {"option": "Educational psychologytechnology ", "correct":false},
+                {"option": "Educational psychology ", "correct":false},
                 {"option": "Media studies", "correct":false}
-            ]
+            ],
+            "sound": "./sounds/1sound5.mp3"
         } 
     ],
     [
@@ -103,7 +113,8 @@
                 {"option": "Arachnophobia", "correct":false},
                 {"option": "Ailurophobia", "correct":false},
                 {"option": "Hydrophobia", "correct":false}
-            ]
+            ],
+            "sound": "./sounds/2sound1.mp3"
         },
         {
             "question": "Which of the following languages have the longest alphabets?",
@@ -112,7 +123,8 @@
                 {"option": "Arabic", "correct":false},
                 {"option": "Russian", "correct":true},
                 {"option": "English", "correct":false}
-            ]
+            ],
+            "sound": "./sounds/2sound2.mp3"
             
         },
         {
@@ -122,7 +134,8 @@
                 {"option": "Libra", "correct":false},
                 {"option": "Pisces", "correct":true},
                 {"option": "Aquarius", "correct":false}
-            ]
+            ],
+            "sound": "./sounds/2sound3.mp3"
         },
         {
             "question": "What is the largest US state by landmass?",
@@ -131,7 +144,8 @@
                 {"option": "Texas", "correct":false},
                 {"option": "Houston", "correct":false},
                 {"option": "Alaska", "correct":true}
-            ]
+            ],
+            "sound": "./sounds/2sound4.mp3"
         },
         {
             "question": "Which of the following apps has the most total users?",
@@ -140,7 +154,8 @@
                 {"option": "Signal", "correct":false},
                 {"option": "TikTok", "correct":false},
                 {"option": "Snapchat", "correct":false}
-            ]
+            ],
+            "sound": "./sounds/2sound5.mp3"
         }, 
         {
             "question": "What city hosted the 2002 olympic games?",
@@ -149,7 +164,8 @@
                 {"option": "Sydney", "correct":true},
                 {"option": "Beijing", "correct":false},
                 {"option": "California", "correct":false}
-            ]
+            ],
+            "sound": "./sounds/2sound6.mp3"
         }, 
         {
             "question": "How many plays do people generally believe that Shakespere wrote?",
@@ -158,7 +174,8 @@
                 {"option": "37", "correct":true},
                 {"option": "38", "correct":false},
                 {"option": "22", "correct":false}
-            ]
+            ],
+            "sound": "./sounds/2sound7.mp3"
         }, 
         {
             "question": "Which of the following was considered one of the seven ancient wonders?",
@@ -167,7 +184,8 @@
                 {"option": "Colossus of Rhodes", "correct":true},
                 {"option": "Great Wall of China", "correct":false},
                 {"option": "Rise of the Tsunami", "correct":false}
-            ]
+            ],
+            "sound": "./sounds/2sound8.mp3"
         }, 
         {
             "question": "Who directed the Academy Award-winning movie, Gladiator?",
@@ -176,7 +194,8 @@
                 {"option": "Ridley Scott", "correct":true},
                 {"option": "James Cameron", "correct":false},
                 {"option": "Dwanyne Johnson", "correct":false}
-            ]
+            ],
+            "sound": "./sounds/2sound9.mp3"
         }, 
         {
             "question": "How long did dinosaurs live on the earth?",
@@ -185,7 +204,8 @@
                 {"option": "150-200 million years", "correct":true},
                 {"option": "200+ million years", "correct":false},
                 {"option": "300+ million years", "correct":false}
-            ]
+            ],
+            "sound": "./sounds/2sound10.mp3"
         }
     ],
     [
@@ -196,7 +216,8 @@
                 {"option": "Nikola Tesla", "correct":false},
                 {"option": "Galileo Galile", "correct":false},
                 {"option": "Albert Einstein", "correct":false}
-            ]
+            ],
+            "sound": "./sounds/3sound1.mp3"
         },
         {
             "question": "How many colors are in the rainbow??",
@@ -205,7 +226,8 @@
                 {"option": "3", "correct":false},
                 {"option": "7", "correct":true},
                 {"option": "9", "correct":false}
-            ]
+            ],
+            "sound": "./sounds/3sound2.mp3"
             
         },
         {
@@ -215,7 +237,8 @@
                 {"option": "Wheat", "correct":false},
                 {"option": "Bamboo", "correct":true},
                 {"option": "Sugarcane", "correct":false}
-            ]
+            ],
+            "sound": "./sounds/3sound3.mp3"
         },
         {
             "question": "Which is the most abundant element in the universe?",
@@ -224,7 +247,8 @@
                 {"option": "Carbon", "correct":false},
                 {"option": "Oxygen", "correct":false},
                 {"option": "Hydrogen", "correct":true}
-            ]
+            ],
+            "sound": "./sounds/3sound4.mp3"
         },
         {
             "question": "What is the hardest natural substance on Earth?",
@@ -233,7 +257,8 @@
                 {"option": "Gold", "correct":false},
                 {"option": "Quartz", "correct":false},
                 {"option": "Iron", "correct":false}
-            ]
+            ],
+            "sound": "./sounds/3sound5.mp3"
         }, 
         {
             "question": "Which freezes faster, hot water or cold water?",
@@ -242,7 +267,8 @@
                 {"option": "Hot Water", "correct":true},
                 {"option": "They freeze at the same time", "correct":false},
                 {"option": "It depends on the container", "correct":false}
-            ]
+            ],
+            "sound": "./sounds/3sound6.mp3"
         }, 
         {
             "question": "On what continent will you not find bees?",
@@ -251,7 +277,8 @@
                 {"option": "Antarctica", "correct":true},
                 {"option": "Australia", "correct":false},
                 {"option": "Asia", "correct":false}
-            ]
+            ],
+            "sound": "./sounds/3sound7.mp3"
         }, 
         {
             "question": "What is the only rock that floats?",
@@ -260,7 +287,8 @@
                 {"option": "Pumice", "correct":true},
                 {"option": "Basalt", "correct":false},
                 {"option": "Limestone", "correct":false}
-            ]
+            ],
+            "sound": "./sounds/3sound8.mp3"
         }, 
         {
             "question": "How long is the memory of a goldfish?",
@@ -269,7 +297,8 @@
                 {"option": "3 days", "correct":true},
                 {"option": "3 seconds", "correct":false},
                 {"option": "2 weeks", "correct":false}
-            ]
+            ],
+            "sound": "./sounds/3sound9.mp3"
         }, 
         {
             "question": "What mountain peak is farthest from the center of the Earth?",
@@ -278,7 +307,8 @@
                 {"option": "Chimborazo", "correct":true},
                 {"option": "Mount Everest", "correct":false},
                 {"option": "K2", "correct":false}
-            ]
+            ],
+            "sound": "./sounds/3sound10.mp3"
         }
     ]
 ]

@@ -9,8 +9,11 @@ const home = document.querySelector(".home")
 const app = document.querySelector(".app")
    
 let data = ""
-let subject = 0
+let subject = ""
 let questionIndex = 0;
+let currentSound = ''
+var audio =   new Audio ('./sounds/intro.mp3')
+var winAudio =   new Audio ('./sounds/winner.mp3')
 let score = 0;
 
 (function () {
@@ -18,7 +21,7 @@ let score = 0;
     .then(res => res.json())
     .then(output => {
         data = output
-
+        document.querySelector(".music").style.fontSize = "15px"
     })
 })()
 
@@ -27,35 +30,40 @@ let score = 0;
 Array.from(subjects.children).map(subject => {
         subject.addEventListener('click', (e)=> {
             if(!user_name.value) {
-      swal({
-        title: "Unable to enter Quiznosaur🦖",
-        text: "Please enter your name 🥺",
-        icon: "error",
-        timer: 2000,
-        button: false
-      });
-      
+    //   swal({
+    //     title: "Unable to enter Quiznosaur🦖",
+    //     text: "Please enter your name 🥺",
+    //     icon: "error",
+    //     timer: 2000,
+    //     button: false
+    //   });
                 return
             }
+
         welcome.style.display = "none"
         quiz.style.display = "block"
         index.style.color = "white" 
         app.style.paddingTop = "10px"
-        app.style.paddingBottom = "100px"
-        swal({
-            title: `Welcome to Quiznosaur ${user_name.value} 🦖`,
-            text: "We know you're gonna ace this🎉 ",
-            icon: "success",
-            timer: 2000,
-            button: false
-          });
+        app.style.paddingBottom = "50px"
+        // swal({
+        //     title: `Welcome to Quiznosaur ${user_name.value}🦖`,
+        //     text: "We know you're gonna ace this🎉 ",
+        //     icon: "success",
+        //     timer: 2000,
+        //     button: false
+        //   });
         startQuiz(e.target.id)
     })
     }
     )
 home.addEventListener('click' ,()=> {
+        winAudio.pause()
+        winAudio.currentTime = 0
+        subject = ""
+        console.log(subject)
         welcome.style.display = "block"
         quiz.style.display = "none"
+        document.querySelector("body").classList.remove("flex");
         app.style.background = "linear-gradient(90deg, purple,  black)"
 
 })
@@ -73,6 +81,7 @@ function startQuiz (id)  {
     score = 0;
     home.style.display = "none"
     nextButton.innerHTML = "Next"
+
     shuffle(data[subject])
     console.log(data[subject])
     showQuestion()
@@ -81,7 +90,9 @@ function startQuiz (id)  {
 const showQuestion = () => {
     if (subject !== undefined) {
     let questionNo =  questionIndex + 1
+    currentSound = new Audio (data[subject][questionIndex].sound)
     let currentQuestion = data[subject][questionIndex]
+    currentSound.play()
     answerButtons.innerHTML = ""
     index.innerHTML = `Question ${questionNo}/${data[subject].length}`
     questionElement.innerHTML = currentQuestion.question
@@ -102,11 +113,15 @@ const selectAnswer = (event) => {
     const selectedOption = event.target;
     const isCorrect = selectedOption.dataset.correct === "true"
         if(isCorrect) {
+            new Audio ('./sounds/correct1.mp3').play()
             selectedOption.classList.add("correct")
+
             score ++
         }
         else {
+            new Audio ('./sounds/incorrect.mp3').play()
             selectedOption.classList.add("incorrect")
+
         }
         Array.from(answerButtons.children).map(option => {
             if (option.dataset.correct === "true") {
@@ -120,10 +135,13 @@ const selectAnswer = (event) => {
 nextButton.addEventListener('click', ()=> {
     nextButton.style.display = "none"
     if (questionIndex < data[subject].length) {
-     handleNextButton()
+        currentSound.pause()
+        handleNextButton()
     }
     else {
         startQuiz(subject)
+        winAudio.pause()
+        winAudio.currentTime = 0
     }
  })
 const handleNextButton = () => {
@@ -132,26 +150,50 @@ const handleNextButton = () => {
         showQuestion()
     }
     else {
+        document.querySelector("body").classList.add("flex");
+        var averageScore = data[subject].length / 2
+        if (score > averageScore) {
+            winAudio.play()
+        }
+        else {
+            new Audio('./sounds/fail.mp3').play()
+
+        }
         answerButtons.innerHTML = ""
+        home.style.display = "block"
         home.style.color = "black"
         home.style.backgroundColor = "white"
         home.style.width = "50px"
-        home.style.display = "block"
         nextButton.style.display = "block"
         questionElement.innerHTML = `${user_name.value}, you scored ${score} out of ${data[subject].length}`
         nextButton.innerHTML = "Play Again"
 
         setTimeout(() => {
-            swal({
-                title: `Thank you for using Quiznosaur ${user_name.value} 🦖`,
-                text: "We hope you had a blast 🤩 ",
-                icon: "success",
-                timer: 2000,
-                button: false
-              });
+            // swal({
+            //     title: `Thank you for using Quiznosaur ${user_name.value}🦖`,
+            //     text: "We hope you had a blast 🤩 ",
+            //     icon: "success",
+            //     timer: 2000,
+            //     button: false
+            //   });
           
         },1000)
     }
 }
+function intro() {
+    setInterval(() => {
+        if (subject === "") {
+            audio.volume = 0.5
+            audio.play()
+        }
+        else {
+        audio.volume = 0.01
+        audio.play()
+        }
+        
+
+    }, 1000);
+    }
+
 
 
